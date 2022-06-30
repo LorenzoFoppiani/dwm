@@ -137,8 +137,8 @@ static Key keys[] = {
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,			XK_q,      killclient,     {0} },
-	{ MODKEY|ShiftMask,		XK_q,	   spawn,	   {.v = (const char*[]){ "sysact", NULL } } },
-	{ MODKEY,			XK_d,		spawn,          {.v = (const char*[]){ "dmenu_run", NULL } } },
+	{ MODKEY,			XK_BackSpace,	spawn,	   {.v = (const char*[]){ "sysact", NULL } } },
+	{ MODKEY,			XK_d,		spawn,     {.v = (const char*[]){ "dmenu_run", NULL } } },
 	{ MODKEY,			XK_w,	   spawn,      	   {.v = (const char*[]){ BROWSER, NULL } } },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
@@ -160,7 +160,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_BackSpace, quit,        {0} },
+	//{ MODKEY|ShiftMask,             XK_BackSpace, quit,        {0} },
 };
 
 /* button definitions */

@@ -137,7 +137,7 @@ static Key keys[] = {
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,			XK_q,      killclient,     {0} },
-	{ MODKEY,			XK_BackSpace,	spawn,	   {.v = (const char*[]){ "~/.local/bin/sysact", NULL } } },
+	{ MODKEY,			XK_BackSpace,	spawn,	   {.v = (const char*[]){ "sysact", NULL } } },
 	{ MODKEY,			XK_d,		spawn,     {.v = (const char*[]){ "dmenu_run", NULL } } },
 	{ MODKEY,			XK_w,	   spawn,      	   {.v = (const char*[]){ BROWSER, NULL } } },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
