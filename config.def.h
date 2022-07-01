@@ -2,6 +2,8 @@
 
 /* Constants */
 #define BROWSER "firefox"
+#define TERMINAL "st"
+#define TERMCLASS "St"
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
